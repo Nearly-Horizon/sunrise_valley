@@ -401,31 +401,3 @@ footer {
         padding-left: 20px;
     }
 }
-
-/* Pour les très petits écrans (moins de 480px) */
-@media only screen and (max-width: 480px) {
-    h1 {
-        font-size: 1.5rem;
-    }
-    
-    h2 {
-        font-size: 1.3rem;
-    }
-    
-    .header-img {
-        width: 120px;
-    }
-    
-    .dieu-link {
-        font-size: 1.2rem;
-    }
-    
-    /* Ajustement des marges et paddings */
-    header {
-        padding: 1rem;
-    }
-    
-    main {
-        padding: 0.5rem;
-    }
-}
