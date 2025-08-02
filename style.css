@@ -379,6 +379,19 @@ footer {
     .abonnement-form {
         padding: 1rem;
     }
+
+    .abonnement-form input[type="text"],
+    .abonnement-form input[type="date"],
+    .abonnement-form input[type="email"] {
+        width: 100%;
+        box-sizing: border-box; /* Inclut le padding dans la largeur */
+        max-width: 100%; /* Empêche tout débordement */
+    }
+
+    /* Optionnel : Ajuster le padding pour les petits écrans */
+    .abonnement-form .form-group input {
+        padding: 0.5rem; /* Réduit légèrement le padding sur mobile */
+    }
     
     /* Ajustements spécifiques pour les pages */
     /* Page Dieux.html */
@@ -401,3 +414,4 @@ footer {
         padding-left: 20px;
     }
 }
+
