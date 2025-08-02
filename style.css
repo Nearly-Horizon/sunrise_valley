@@ -307,4 +307,125 @@ footer {
     transform: scale(1.02);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     font-weight: bold;
+
+}
+
+/* Media Queries pour les écrans de téléphone */
+@media only screen and (max-width: 768px) {
+    /* Ajustements généraux */
+    body {
+        font-size: 16px;
+    }
+    
+    /* Header responsive */
+    .header-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    
+    .header-img {
+        width: 150px;
+        margin: 0 auto;
+    }
+    
+    .header-title {
+        text-align: center;
+        padding-top: 15px;
+    }
+    
+    /* Navigation responsive */
+    nav ul {
+        flex-direction: column;
+        padding: 0.5rem;
+    }
+    
+    nav a {
+        display: block;
+        margin: 0.25rem 0;
+        padding: 0.5rem;
+    }
+    
+    /* Contenu principal responsive */
+    main {
+        padding: 1rem;
+    }
+    
+    .dieu-encadre, .rituel-encadre {
+        margin: 10px 0;
+        padding: 10px;
+    }
+    
+    .dieu-content {
+        flex-direction: column;
+    }
+    
+    .dieu-image {
+        width: 100%;
+        max-width: 300px;
+        margin-bottom: 15px;
+    }
+    
+    /* Images des mythes responsive */
+    #image-mythe, .mythe-image {
+        width: 100%;
+        height: auto;
+    }
+    
+    .section-container {
+        flex-direction: column;
+    }
+    
+    /* Formulaire d'abonnement responsive */
+    .abonnement-form {
+        padding: 1rem;
+    }
+    
+    /* Ajustements spécifiques pour les pages */
+    /* Page Dieux.html */
+    .dieu-intro {
+        font-size: 0.9em;
+    }
+    
+    /* Page Mythes.html */
+    .mythe-content {
+        align-items: flex-start;
+    }
+    
+    /* Page Rituels.html */
+    .rituel-encadre {
+        max-width: 100%;
+    }
+    
+    /* Ajustements pour les listes */
+    ul, ol {
+        padding-left: 20px;
+    }
+}
+
+/* Pour les très petits écrans (moins de 480px) */
+@media only screen and (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+    
+    h2 {
+        font-size: 1.3rem;
+    }
+    
+    .header-img {
+        width: 120px;
+    }
+    
+    .dieu-link {
+        font-size: 1.2rem;
+    }
+    
+    /* Ajustement des marges et paddings */
+    header {
+        padding: 1rem;
+    }
+    
+    main {
+        padding: 0.5rem;
+    }
 }
