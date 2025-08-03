@@ -400,7 +400,22 @@ footer {
     ul, ol {
         padding-left: 20px;
     }
+
+    /* Correction spécifique pour les inputs dans le formulaire */
+    .abonnement-form input[type="text"],
+    .abonnement-form input[type="date"],
+    .abonnement-form input[type="email"] {
+        width: 100%;
+        box-sizing: border-box; /* Inclut le padding dans la largeur */
+        max-width: 100%; /* Empêche tout débordement */
+    }
+
+    /* Optionnel : Ajuster le padding pour les petits écrans */
+    .abonnement-form .form-group input {
+        padding: 0.5rem; /* Réduit légèrement le padding sur mobile */
+    }
 }
+
 
 
 
