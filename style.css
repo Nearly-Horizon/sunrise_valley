@@ -310,14 +310,11 @@ footer {
 
 }
 
-/* Media Queries pour les écrans de téléphone */
 @media only screen and (max-width: 768px) {
-    /* Ajustements généraux */
     body {
         font-size: 16px;
     }
     
-    /* Header responsive */
     .header-container {
         grid-template-columns: 1fr;
         text-align: center;
@@ -333,7 +330,6 @@ footer {
         padding-top: 15px;
     }
     
-    /* Navigation responsive */
     nav ul {
         flex-direction: column;
         padding: 0.5rem;
@@ -345,7 +341,6 @@ footer {
         padding: 0.5rem;
     }
     
-    /* Contenu principal responsive */
     main {
         padding: 1rem;
     }
@@ -365,7 +360,6 @@ footer {
         margin-bottom: 15px;
     }
     
-    /* Images des mythes responsive */
     #image-mythe, .mythe-image {
         width: 100%;
         height: auto;
@@ -375,46 +369,39 @@ footer {
         flex-direction: column;
     }
     
-    /* Formulaire d'abonnement responsive */
     .abonnement-form {
         padding: 1rem;
     }
     
-    /* Ajustements spécifiques pour les pages */
-    /* Page Dieux.html */
     .dieu-intro {
         font-size: 0.9em;
     }
     
-    /* Page Mythes.html */
     .mythe-content {
         align-items: flex-start;
     }
     
-    /* Page Rituels.html */
     .rituel-encadre {
         max-width: 100%;
     }
     
-    /* Ajustements pour les listes */
     ul, ol {
         padding-left: 20px;
     }
 
-    /* Correction spécifique pour les inputs dans le formulaire */
     .abonnement-form input[type="text"],
     .abonnement-form input[type="date"],
     .abonnement-form input[type="email"] {
         width: 100%;
-        box-sizing: border-box; /* Inclut le padding dans la largeur */
-        max-width: 100%; /* Empêche tout débordement */
+        box-sizing: border-box;
+        max-width: 100%;
     }
-
-    /* Optionnel : Ajuster le padding pour les petits écrans */
+    
     .abonnement-form .form-group input {
-        padding: 0.5rem; /* Réduit légèrement le padding sur mobile */
+        padding: 0.5rem;
     }
 }
+
 
 
 
